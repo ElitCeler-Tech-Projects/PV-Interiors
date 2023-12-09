@@ -1,0 +1,119 @@
+.reviews {
+    width: 1200px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2.4rem;
+    padding: 1.2rem;
+}
+
+.each__review {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.8rem;
+
+    & img {
+        width: 400px;
+        height: auto;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+}
+
+.customer__details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.2rem;   
+
+    & img {
+        width: 170px;
+        height: auto;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        object-fit: cover;
+        background-color: #0b344e72;
+    }
+    
+    & p {
+        width: 90%;
+        text-align: center;
+        color: #0b344e;
+        font-size: 1.2rem;
+    }
+}
+
+.review__toggle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+
+    & button {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: #ddd;
+        transition: background-color 0.2s ease-in-out;
+        cursor: pointer;
+        outline: none;
+        border: none;
+    }
+
+    & button.active__review {
+        background-color: #0b344e;
+    }
+
+    & button:hover, & button:focus-visible {
+        background-color: #0b344e93;
+    }
+
+}
+
+@media all and (width <= 900px) {
+
+    .reviews {
+        margin-top: 1.4rem;
+    }
+
+    .each__review {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        & > img {
+            order: 2;
+        }
+    }
+
+    .customer__details {
+        order: 1;
+    }
+}
+
+@media all and (width <= 600px) {
+    .each__review {
+        gap: 1.2rem;
+        & > img {
+            width: 100%;
+        }
+    }
+
+    .customer__details {
+        width: 100%;
+        & p {
+            width: 100%;
+            font-size: 1rem;
+        }
+    }
+}
