@@ -156,16 +156,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #232323a5;
+    background-color: #232323b8;
     border-radius: 8px;
     color: #FFF;
     font-size: 1.2rem;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s linear;
+    box-shadow: 0 0 4px 1px #232323d0;
 }
 
 .each__service:hover > p, .each__service:focus-visible > p {
     opacity: 0;
-} 
+}
 
 /* Section 3 */
 
