@@ -33,3 +33,9 @@ export interface ConceptsType {
     conceptImage: string,
     conceptDetail: string
 }
+
+export type ServiceCollectionsType = {
+    id: number,
+    collectionName: string,
+    collectionImages: string[]
+}

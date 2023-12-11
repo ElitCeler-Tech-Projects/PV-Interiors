@@ -1,4 +1,4 @@
-import { OurServicesType, CaseStudiesType, TestimonialsType, CollectionsType, ConceptsType } from "@/types";
+import { OurServicesType, CaseStudiesType, TestimonialsType, CollectionsType, ConceptsType, ServiceCollectionsType } from "@/types";
 
 // Home Page
 
@@ -136,6 +136,50 @@ const Concepts: ConceptsType[] = [
         conceptImage: 'https://images.unsplash.com/photo-1618543005334-b0904ecd4441?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHw3N3x8c29mYXN8ZW58MHx8fHwxNzAyMzAyOTk3fDA&ixlib=rb-4.0.3&q=80&w=1080',
         conceptDetail: "Step into a nostalgic journey with PV Interiors Retro Design. Embrace the vibrant energy and playful spirit of bygone eras, where bold colors, iconic patterns, and vintage flair converge to create spaces that celebrate the charm of the past while remaining distinctly contemporary."
     },
+]
+
+const ServiceCollections: ServiceCollectionsType[] = [
+    {
+        id: 1,
+        collectionName: 'Kitchen',
+        collectionImages: [
+            'https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHw0fHxraXRjaGVufGVufDB8fHx8MTcwMjMxNzYxMHww&ixlib=rb-4.0.3&q=80&w=1080',
+            'https://images.unsplash.com/photo-1600585152220-90363fe7e115?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwzfHxraXRjaGVufGVufDB8fHx8MTcwMjMxNzYxMHww&ixlib=rb-4.0.3&q=80&w=1080',
+            'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwyfHxraXRjaGVufGVufDB8fHx8MTcwMjMxNzYxMHww&ixlib=rb-4.0.3&q=80&w=1080',
+            'https://images.unsplash.com/photo-1556911220-bff31c812dba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwxfHxraXRjaGVufGVufDB8fHx8MTcwMjMxNzYxMHww&ixlib=rb-4.0.3&q=80&w=1080'
+        ]
+    },
+    {
+        id: 2,
+        collectionName: 'Bedroom',
+        collectionImages: [
+            'https://images.unsplash.com/flagged/photo-1573168710865-2e4c680d921a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHw2fHxCZWRyb29tfGVufDB8fHx8MTcwMjMxNzk5MXww&ixlib=rb-4.0.3&q=80&w=1080',
+            'https://images.unsplash.com/photo-1566665797739-1674de7a421a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwzfHxCZWRyb29tfGVufDB8fHx8MTcwMjMxNzk5MXww&ixlib=rb-4.0.3&q=80&w=1080',
+            'https://images.unsplash.com/photo-1615874959474-d609969a20ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwyfHxCZWRyb29tfGVufDB8fHx8MTcwMjMxNzk5MXww&ixlib=rb-4.0.3&q=80&w=1080',
+            'https://images.unsplash.com/photo-1540518614846-7eded433c457?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwxfHxCZWRyb29tfGVufDB8fHx8MTcwMjMxNzk5MXww&ixlib=rb-4.0.3&q=80&w=1080'
+        ]
+    },
+    {
+        id: 3,
+        collectionName: 'Bathroom',
+        collectionImages: [
+            'https://images.unsplash.com/photo-1600566752355-35792bedcfea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwzfHxCYXRocm9vbXxlbnwwfHx8fDE3MDIzMTgwMjZ8MA&ixlib=rb-4.0.3&q=80&w=1080',
+            'https://images.unsplash.com/photo-1620626011761-996317b8d101?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHw2fHxCYXRocm9vbXxlbnwwfHx8fDE3MDIzMTgwMjZ8MA&ixlib=rb-4.0.3&q=80&w=1080',
+            'https://images.unsplash.com/photo-1595514535116-d0401260e7cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwxNXx8QmF0aHJvb218ZW58MHx8fHwxNzAyMzE4MDI2fDA&ixlib=rb-4.0.3&q=80&w=1080',
+            'https://images.unsplash.com/photo-1517414628894-83d47b22f233?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwyN3x8QmF0aHJvb218ZW58MHx8fHwxNzAyMzE4MDcxfDA&ixlib=rb-4.0.3&q=80&w=1080'
+        ]
+    },
+    {
+        id: 4,
+        collectionName: 'Living Room',
+        collectionImages: [
+            'https://images.unsplash.com/photo-1606654810639-76ed5d12737b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwzMnx8TGl2aW5nJTIwcm9vbXxlbnwwfHx8fDE3MDIzMTgwOTB8MA&ixlib=rb-4.0.3&q=80&w=1080',
+            'https://images.unsplash.com/photo-1582417728413-b2347161b864?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwyNHx8TGl2aW5nJTIwcm9vbXxlbnwwfHx8fDE3MDIzMTgwOTB8MA&ixlib=rb-4.0.3&q=80&w=1080',
+            'https://images.unsplash.com/photo-1554995207-c18c203602cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwyMnx8TGl2aW5nJTIwcm9vbXxlbnwwfHx8fDE3MDIzMTgwOTB8MA&ixlib=rb-4.0.3&q=80&w=1080',
+            'https://images.unsplash.com/photo-1582037928769-181f2644ecb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwyMXx8TGl2aW5nJTIwcm9vbXxlbnwwfHx8fDE3MDIzMTgwOTB8MA&ixlib=rb-4.0.3&q=80&w=1080'
+        ]
+    },
+    
 ]
 
 export { ourServicesHome, CaseStudiesHome, Testimonials, Collections, Concepts };
