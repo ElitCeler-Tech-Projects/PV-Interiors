@@ -87,6 +87,17 @@
     }
 }
 
+@media all and (min-width: 1440px) {
+    .section2__center {
+        grid-template-columns: 400px 360px;
+
+        & img:nth-child(3) {
+            width: 360px;
+            height: 400px;
+        }
+    }
+}
+
 .section3__center {
     width: 100%;
     max-width: 1500px;
@@ -97,7 +108,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .each__concept {
@@ -105,7 +116,7 @@
     height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     gap: 2rem;
 
