@@ -21,3 +21,15 @@ export interface TestimonialsType {
     curstomerPic: string,
     customerReview: string,
 }
+
+export interface CollectionsType {
+    id: number,
+    image: string,
+    imageText: string
+}
+
+export interface ConceptsType {
+    id: number,
+    conceptImage: string,
+    conceptDetail: string
+}

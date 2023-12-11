@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
+import "@/app/globals.scss";
 
 const NotFound = () => {
   return (
-    <div>Not Found</div>
+    <main className="app__notFound"></main>
   )
 }
 
-export default NotFound
+export default NotFound;

@@ -1,0 +1,222 @@
+.app__services {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: #FFF;
+}
+
+.services__section1 {
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    & p {
+        z-index: 10;
+        right: 10%;
+        width: 400px;
+        padding: 1rem;
+        position: relative;
+        text-align: center;
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 52px;
+        color: #104C70;
+        text-shadow: 0.055px 0.803px 1.755px rgba(0, 0, 0, 0.14), 0.24px 3.49px 3.42px rgba(0, 0, 0, 0.23), 0.583px 8.481px 6.156px rgba(0, 0, 0, 0.29);
+    }
+}
+
+.section1__banner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+
+.services__section2, .services__section3 {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    margin: 3rem auto;
+}
+
+.section2__center {
+    width: 100%;
+    height: 100%;
+    max-width: 1500px;
+    padding: 1.2rem;
+    margin: auto;
+    margin-top: 1.2rem;
+    display: grid;
+    grid-template-columns: 280px 200px;
+    justify-content: center;
+    place-items: center;
+    gap: 4rem 8rem;
+    position: relative;
+
+    & img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 7/8;
+        object-fit: cover;
+        border-radius: 18px;
+        box-shadow: 0 0 4px 2px #23232340;
+    }
+
+    & img:nth-child(3) {
+        width: 280px;
+        height: 320px;
+        top: 30%;
+        left: 40%;
+        position: absolute;
+        outline: 4px solid #FFF;
+        box-shadow: none;
+    }
+}
+
+.section3__center {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: 1.2rem;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.each__concept {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+
+    & p {
+        width: 420px;
+        text-align: center;
+        font-size: 1.1rem;
+        font-style: italic;
+        color: #104C70;
+    }
+
+    & img {
+        width: 480px;
+        height: auto;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        box-shadow: 0 0 4px 2px #23232340;
+    }
+}
+
+.each__concept:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+/* Media Responsive */
+
+@media all and (max-width: 900px) {
+
+    .each__concept:nth-child(n) {
+        flex-direction: column-reverse;
+        
+        & p, & img {
+            width: 80%;
+        }
+    }
+
+}
+
+@media all and (max-width: 700px) {
+
+    .section2__center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.2rem;
+        margin-top: 0.8rem;
+        padding: 0.8rem;
+
+        & img {
+            width: 100%;
+            height: auto;
+            border-radius: 0;
+            aspect-ratio: 16/9;
+            object-position: center;
+        }
+
+        & img:nth-child(3) {
+            position: static;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16/9;
+            object-position: center;
+        }
+    }
+
+}
+
+@media all and (max-width: 600px) {
+
+    .services__section1 {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+        max-width: 100%;
+        position: relative;
+    
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    
+        & p {
+            z-index: 10;
+            text-align: right;
+            padding: 1.2rem 0.4rem 0.4rem;
+            position: relative;
+            right: 0;
+            font-size: 1.4rem;
+            line-height: normal;
+        }
+    }
+
+    .section1__banner {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section1__banner img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section3__center {
+        padding: 0.8rem;
+    }
+
+    .each__concept:nth-child(n) {
+        
+        & p, & img {
+            width: 100%;
+            font-size: 1rem;
+        }
+    }
+}

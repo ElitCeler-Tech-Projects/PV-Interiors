@@ -1,4 +1,6 @@
-import { OurServicesType, CaseStudiesType, TestimonialsType } from "@/types";
+import { OurServicesType, CaseStudiesType, TestimonialsType, CollectionsType, ConceptsType } from "@/types";
+
+// Home Page
 
 const ourServicesHome: OurServicesType[] = [
     {
@@ -86,7 +88,54 @@ const Testimonials: TestimonialsType[] = [
         customerReview: 'Saw star season forest swim library favorite winter compass excited chosen began nearest sing ordinary mistake frighten experiment drive darkness speak statement walk jungle.'
     },
     
+];
+
+// Services Page
+
+const Collections: CollectionsType[] = [
+    {
+        id: 1,
+        image: 'https://images.unsplash.com/photo-1577926606472-fc6d3a33f7e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwzNHx8c29mYXN8ZW58MHx8fHwxNzAyMzAxNjY1fDA&ixlib=rb-4.0.3&q=80&w=1080',
+        imageText: "Curtains"
+    },
+    {
+        id: 2,
+        image: 'https://images.unsplash.com/photo-1567016507665-356928ac6679?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwzOXx8c29mYXN8ZW58MHx8fHwxNzAyMzAxNjY1fDA&ixlib=rb-4.0.3&q=80&w=1080',
+        imageText: "Sofa"
+    },
+    {
+        id: 3,
+        image: 'https://images.unsplash.com/photo-1506377295352-e3154d43ea9e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHw1MXx8c29mYXN8ZW58MHx8fHwxNzAyMzAyOTY5fDA&ixlib=rb-4.0.3&q=80&w=1080',
+        imageText: "Lamp"
+    },
+    {
+        id: 4,
+        image: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHw1NHx8c29mYXN8ZW58MHx8fHwxNzAyMzAyOTY5fDA&ixlib=rb-4.0.3&q=80&w=1080',
+        imageText: "Chair"
+    },
+    {
+        id: 5,
+        image: 'https://images.unsplash.com/photo-1520605728164-b6a5c6814203?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHw3Mnx8c29mYXN8ZW58MHx8fHwxNzAyMzAyOTk3fDA&ixlib=rb-4.0.3&q=80&w=1080',
+        imageText: "Living Room"
+    }
+];
+
+const Concepts: ConceptsType[] = [
+    {
+        id: 1,
+        conceptImage: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHw2M3x8c29mYXN8ZW58MHx8fHwxNzAyMzAyOTk3fDA&ixlib=rb-4.0.3&q=80&w=1080',
+        conceptDetail: 'At PV Interiors, we redefine modern living with our bespoke design solutions. Immerse yourself in the elegance of customized spaces that seamlessly blend contemporary aesthetics with personalized functionality, curated exclusively for you.'
+    },
+    {
+        id: 2,
+        conceptImage: 'https://images.unsplash.com/photo-1515852216175-927860d2be80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHw2N3x8c29mYXN8ZW58MHx8fHwxNzAyMzAyOTk3fDA&ixlib=rb-4.0.3&q=80&w=1080',
+        conceptDetail: 'Discover timeless elegance with PV Interiors Classic Interior Design. Our curated approach brings sophistication to every detail, seamlessly merging refined aesthetics and enduring style. Elevate your space with a touch of classic charm that transcends trends and stands the test of time.'
+    },
+    {
+        id: 3,
+        conceptImage: 'https://images.unsplash.com/photo-1618543005334-b0904ecd4441?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHw3N3x8c29mYXN8ZW58MHx8fHwxNzAyMzAyOTk3fDA&ixlib=rb-4.0.3&q=80&w=1080',
+        conceptDetail: "Step into a nostalgic journey with PV Interiors Retro Design. Embrace the vibrant energy and playful spirit of bygone eras, where bold colors, iconic patterns, and vintage flair converge to create spaces that celebrate the charm of the past while remaining distinctly contemporary."
+    },
 ]
 
-
-export { ourServicesHome, CaseStudiesHome, Testimonials };
+export { ourServicesHome, CaseStudiesHome, Testimonials, Collections, Concepts };
