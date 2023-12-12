@@ -182,4 +182,4 @@ const ServiceCollections: ServiceCollectionsType[] = [
     
 ]
 
-export { ourServicesHome, CaseStudiesHome, Testimonials, Collections, Concepts };
+export { ourServicesHome, CaseStudiesHome, Testimonials, Collections, Concepts, ServiceCollections };

@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 import styles from "./page.module.scss";
 import { Cormorant_SC, Poppins, Alegreya } from "next/font/google";
-import { Collections, Concepts } from '@/data';
+import { Collections, Concepts, ServiceCollections } from '@/data';
 import Title from '@/components/Title/Title';
 
 const alegreya = Alegreya({weight: ['600'], subsets: ['latin']});
@@ -11,7 +11,7 @@ const poppins = Poppins({subsets: ['latin'], weight: ['200', '400', '500', '600'
 
 const page = () => {
 
-  const { app__services, services__section1, section1__banner, services__section2, section2__center, services__section3, section3__center } = styles;
+  const { app__services, services__section1, section1__banner, services__section2, section2__center, services__section3, section3__center, services__section4, section4__center } = styles;
 
   return (
     <main className={app__services}>
@@ -59,6 +59,27 @@ const page = () => {
       </section>
 
       {/* Section 3 - Concepts */}
+
+      {/* Sections About Concepts */}
+
+      {
+        ServiceCollections.map((collection) => {
+          return (
+            <section key={collection.id} className={services__section4}>
+              <Title title={collection.collectionName} />
+              <div className={section4__center}>
+                {
+                  collection.collectionImages.map((img, index) => {
+                    return <Image src={img} alt={collection.collectionName} key={index} width={300} height={320}/>
+                  })
+                }
+              </div>
+            </section>
+          )
+        })
+      }
+
+      {/* Sections About Concepts */}
 
     </main>
   )
