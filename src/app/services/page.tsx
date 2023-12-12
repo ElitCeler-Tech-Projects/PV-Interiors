@@ -3,6 +3,8 @@ import Image from 'next/image';
 import styles from "./page.module.scss";
 import { Cormorant_SC, Poppins, Alegreya } from "next/font/google";
 import { Collections, Concepts, ServiceCollections } from '@/data';
+
+// Components
 import Title from '@/components/Title/Title';
 
 const alegreya = Alegreya({weight: ['600'], subsets: ['latin']});
