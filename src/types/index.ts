@@ -39,3 +39,17 @@ export type ServiceCollectionsType = {
     collectionName: string,
     collectionImages: string[]
 }
+
+export interface GalleryType {
+    id: number,
+    imageText: string,
+    mainImage: string,
+}
+
+export interface CaseStudyType {
+    id: number,
+    afterPic: string,
+    beforePic: string,
+    studyTitle: string,
+    studyDescription: string
+}

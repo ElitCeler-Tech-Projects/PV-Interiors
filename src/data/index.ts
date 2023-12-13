@@ -1,4 +1,4 @@
-import { OurServicesType, CaseStudiesType, TestimonialsType, CollectionsType, ConceptsType, ServiceCollectionsType } from "@/types";
+import { OurServicesType, CaseStudiesType, TestimonialsType, CollectionsType, ConceptsType, ServiceCollectionsType, GalleryType, CaseStudyType } from "@/types";
 
 // Home Page
 
@@ -182,4 +182,79 @@ const ServiceCollections: ServiceCollectionsType[] = [
     
 ]
 
-export { ourServicesHome, CaseStudiesHome, Testimonials, Collections, Concepts, ServiceCollections };
+const ProjectsGallery: GalleryType[] = [
+    {
+        id: 1,
+        mainImage: 'https://images.unsplash.com/photo-1560792523-9b3e98060a4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwyM3x8aW50ZXJpb3JzfGVufDB8fHx8MTcwMjQ3NzI1N3ww&ixlib=rb-4.0.3&q=80&w=1080',
+        imageText: 'Cycle',
+    },
+    {
+        id: 2,
+        mainImage: 'https://images.unsplash.com/photo-1604014237800-1c9102c219da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwyN3x8aW50ZXJpb3JzfGVufDB8fHx8MTcwMjQ3NzI1N3ww&ixlib=rb-4.0.3&q=80&w=1080',
+        imageText: 'Pot',
+    },
+    {
+        id: 3,
+        mainImage: 'https://images.unsplash.com/photo-1616486701797-0f33f61038ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwyNnx8aW50ZXJpb3JzfGVufDB8fHx8MTcwMjQ3NzI1N3ww&ixlib=rb-4.0.3&q=80&w=1080',
+        imageText: 'Meet Chairs',
+    },
+    {
+        id: 4,
+        mainImage: 'https://images.unsplash.com/photo-1585264550248-1778be3b6368?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwyOXx8aW50ZXJpb3JzfGVufDB8fHx8MTcwMjQ3NzI1N3ww&ixlib=rb-4.0.3&q=80&w=1080',
+        imageText: 'Sofa',
+    },
+    {
+        id: 5,
+        mainImage: 'https://images.unsplash.com/photo-1615875388242-46b822b09cda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwzNHx8aW50ZXJpb3JzfGVufDB8fHx8MTcwMjQ3NzI1N3ww&ixlib=rb-4.0.3&q=80&w=1080',
+        imageText: 'Desk',
+    },
+    {
+        id: 6,
+        mainImage: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHw0MHx8aW50ZXJpb3JzfGVufDB8fHx8MTcwMjQ3NzI1N3ww&ixlib=rb-4.0.3&q=80&w=1080',
+        imageText: 'Lamps',
+    },
+    
+]
+
+const ProjectsCaseStudies: CaseStudyType[] = [
+    {
+        id: 1,
+        studyTitle: 'Before & After: Bedroom Transformation',
+        studyDescription: 'The key to this successful makeover was to start with a blank canvas. The designers removed all of the old furniture and décor, and then painted the walls a fresh white. This gave them a clean slate to work with.',
+        beforePic: 'https://images.unsplash.com/photo-1552558636-f6a8f071c2b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwxMnx8MWJoayUyMGJlZHJvb218ZW58MHx8fHwxNzAyNDc4NDgzfDA&ixlib=rb-4.0.3&q=80&w=1080',
+        afterPic: 'https://images.unsplash.com/photo-1531835551805-16d864c8d311?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwyfHwxYmhrJTIwYmVkcm9vbXxlbnwwfHx8fDE3MDI0Nzg0ODN8MA&ixlib=rb-4.0.3&q=80&w=1080'
+    },
+    {
+        id: 2,
+        studyTitle: 'Before & After: Dining Room Transformation',
+        studyDescription: 'The key to this successful makeover was to start with a blank canvas. The designers removed all of the old furniture and décor, and then painted the walls a fresh white. This gave them a clean slate to work with.',
+        beforePic: 'https://images.unsplash.com/photo-1517227328246-b17c5646063a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwzNXx8ZGluaW5nJTIwdGFibGUlMjBvbGR8ZW58MHx8fHwxNzAyNDc4NTYyfDA&ixlib=rb-4.0.3&q=80&w=1080',
+        afterPic: 'https://images.unsplash.com/photo-1533040144848-c9b885ea47de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwxOHx8ZGluaW5nJTIwdGFibGUlMjBvbGR8ZW58MHx8fHwxNzAyNDc4NTQ4fDA&ixlib=rb-4.0.3&q=80&w=1080'
+    },
+    
+]
+
+const Architecture: GalleryType[] = [
+    {
+        id: 1,
+        imageText: 'Architecture',
+        mainImage: '/dummies/D4.svg'
+    },
+    {
+        id: 2,
+        imageText: 'Architecture',
+        mainImage: '/dummies/D4.svg'
+    },
+    {
+        id: 3,
+        imageText: 'Architecture',
+        mainImage: '/dummies/D4.svg'
+    },
+    {
+        id: 4,
+        imageText: 'Architecture',
+        mainImage: '/dummies/D4.svg'
+    }   
+]
+
+export { ourServicesHome, CaseStudiesHome, Testimonials, Collections, Concepts, ServiceCollections, ProjectsGallery, ProjectsCaseStudies, Architecture };
